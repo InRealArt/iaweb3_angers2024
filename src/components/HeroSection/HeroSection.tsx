@@ -5,7 +5,7 @@ import styles from './HeroSection.module.scss';
 import { useContext } from 'react';
 import parse from 'html-react-parser';
 import { I18nContext } from '@/i18n-context';
-
+import Link from "next/link";
 
 const  HeroSection = () => {
   const { language, i18n } = useContext(I18nContext);
@@ -36,7 +36,9 @@ const  HeroSection = () => {
         </div>
 
         <button className={styles.discoverButton}>
+          <Link className={styles.menuLinkElement} href={`#discord`}>
           Discover Our universe →
+          </Link>
         </button>
       </div>
 

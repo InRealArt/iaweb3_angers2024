@@ -1,10 +1,11 @@
 .heroContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 4rem 6rem;
   background-color: #1d1d1b;
   color: white;
   min-height: 80vh;
+  gap: 0.5rem;
 }
 
 .leftSection {
@@ -12,7 +13,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
 }
 
 .title {
@@ -57,12 +57,19 @@
 }
 
 .discoverButton {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 1.5rem;
+  line-height: 148.99%;
+  font-weight: 700;
+  position: relative;
+  
   display: inline-flex;
   align-items: center;
   background: none;
   border: none;
   color: white;
-  font-size: 1.1rem;
   cursor: pointer;
   padding: 0;
   margin-top: 2rem;
@@ -77,6 +84,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.leftSection, .rightSection {
+  flex: 0 1 40%; // Ajustez le pourcentage selon vos besoins
 }
 
 .artCard {

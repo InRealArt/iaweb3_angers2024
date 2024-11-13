@@ -10,7 +10,7 @@ const JoinCommunity = () => {
   const { language, i18n } = useContext(I18nContext);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="discord">
       <div className={styles.content}>
         <div className={styles.avatarsContainer}>
           <Image 

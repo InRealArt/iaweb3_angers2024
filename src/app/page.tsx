@@ -10,9 +10,9 @@ import CatalogueStats from '@/components/CatalogueStats/CatalogueStats';
 import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import TrustedPartners from '@/components/TrustedPartners/TrustedPartners';
-import CatalogueRequest from '@/components/JoinCommunity/JoinCommunity';
 import Footer from '@/components/Footer/Footer';
 import PlaceForYou from '@/components/PlaceForYou/PlaceForYou';
+import JoinCommunity from '@/components/JoinCommunity/JoinCommunity';
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <CatalogueStats/>
       <Testimonials/>
       <TrustedPartners/>
-      <CatalogueRequest/>
+      <JoinCommunity/>
       <Footer></Footer>
     </div>
   );
