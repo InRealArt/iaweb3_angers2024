@@ -49,12 +49,73 @@
   }
   
   .galleryCard {
-    flex: 0 0 400px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    position: relative;
+    background: #1d1d1b;
+    border: 2px solid rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem; // Padding autour de tout le contenu
+  
+    .imageWrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 133%; // Ratio 4:3 pour l'image
+      border-radius: 8px;
+      padding: 1rem; // Padding blanc autour de l'image
+      margin-bottom: 2rem; // Espace entre l'image et le texte
+      
+      img {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+  
+    .galleryInfo {
+      color: white;
+      text-align: left;
+      padding: 0 1rem 1rem;
+  
+      h3 {
+        font-family: "Unbounded", sans-serif;
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem 0;
+        color: white;
+      }
+  
+      .partnerTag {
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        font-size: 0.9rem;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      max-width: 100%;
+      
+      .galleryInfo {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
+  
   
   .imageWrapper {
     width: 100%;
@@ -85,6 +146,27 @@
       border-radius: 4px;
       margin-bottom: 1rem;
       font-size: 0.9rem;
+    }
+
+    .partnerAddress {
+      background: var(
+        --bg-bg-color,
+        linear-gradient(
+          135.65deg,
+          rgba(236, 238, 250, 1) 0%,
+          rgba(234, 236, 251, 1) 52.60416865348816%,
+          rgba(225, 229, 255, 1) 100%
+        )
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      font-family: "Unbounded", sans-serif;
+      font-size: 1rem;
+      letter-spacing: -0.03125rem;
+      font-weight: 400;
+      position: relative;
     }
   
     p {

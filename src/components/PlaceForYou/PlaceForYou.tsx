@@ -18,6 +18,9 @@ export default function PlaceForYou() {
 
       <div className={styles.content}>
         <div className={styles.galleryCard}>
+          <div className={styles.galleryInfo}>
+            <h3>Leadouze Gallery</h3>
+          </div>
           <div className={styles.imageWrapper}>
             <Image 
               src="/img/placeForYou/leadouzeGallery.png"
@@ -28,9 +31,8 @@ export default function PlaceForYou() {
             />
           </div>
           <div className={styles.galleryInfo}>
-            <h3>Leadouze Gallery</h3>
             <div className={styles.partnerTag}>IRA PARTNER</div>
-            <p>16 avenue Matignon 75008 PARIS</p>
+            <div className={styles.partnerAddress}>16 avenue Matignon 75008 PARIS</div>
           </div>
         </div>
 
