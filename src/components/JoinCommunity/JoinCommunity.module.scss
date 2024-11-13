@@ -82,15 +82,15 @@
 
 .avatar {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid white;
   transition: transform 0.3s ease;
 
   &:nth-child(1) { // Top
-    top: 0;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -106,7 +106,7 @@
   }
 
   &:nth-child(4) { // Bottom
-    bottom: 0;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -133,8 +133,8 @@
   }
 
   .avatar {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -144,7 +144,7 @@
   }
 
   .avatar {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 }

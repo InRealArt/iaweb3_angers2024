@@ -68,11 +68,11 @@ const JoinCommunity = () => {
 
         <button className={styles.discordButton}>
           <Image 
-            src="/img/icons/discord.svg" 
+            src="/img/icons/discord.png " 
             alt="Discord" 
             width={24} 
             height={24}
-          />
+          />&nbsp;
           Launch Discord
         </button>
       </div>
