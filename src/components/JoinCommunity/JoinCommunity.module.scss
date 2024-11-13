@@ -1,0 +1,150 @@
+.container {
+  background-color: #1d1d1b;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 1;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 60px 0; // Ajoute de l'espace pour les avatars
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #FF6B35; // Couleur orange comme dans l'image
+}
+
+.description {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.discordButton {
+  background-color: #FF6B35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(#FF6B35, 10%);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.avatarsContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.avatar {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+
+  &:nth-child(1) { // Top
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:nth-child(2) { // Top Right
+    top: 20%;
+    right: 0;
+  }
+
+  &:nth-child(3) { // Bottom Right
+    bottom: 20%;
+    right: 0;
+  }
+
+  &:nth-child(4) { // Bottom
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:nth-child(5) { // Bottom Left
+    bottom: 20%;
+    left: 0;
+  }
+
+  &:nth-child(6) { // Top Left
+    top: 20%;
+    left: 0;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    z-index: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 0;
+  }
+
+  .avatar {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 30px 0;
+  }
+
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+}

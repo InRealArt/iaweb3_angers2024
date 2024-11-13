@@ -10,7 +10,7 @@ import CatalogueStats from '@/components/CatalogueStats/CatalogueStats';
 import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import TrustedPartners from '@/components/TrustedPartners/TrustedPartners';
-import CatalogueRequest from '@/components/CatalogueRequest/CatalogueRequest';
+import CatalogueRequest from '@/components/JoinCommunity/JoinCommunity';
 import Footer from '@/components/Footer/Footer';
 
 export default function Home() {

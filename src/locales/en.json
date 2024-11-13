@@ -89,6 +89,9 @@
       "formItem3": "Phone",
       "button": "Get the catalog"
     },
+    "community": {
+      "description": "There are so many rare moments at InRealArt that we warmly invite you that we warmly invite you to join our Discord and enjoy all the web3 and phygital experience we have to offer. Sharpen your artistic sense by winning exclusive airdrops! Win invitations to take part in sumptuous vernissages with our artists... InReal Art is the &quot;Golden Key&quot; of the art world. <br /> We'll open every door for you, so keep an eye out and be curious!"
+    },
     "toast": {
       "errorEmail": "E-mail is not in the correct format",
       "errorName": "Name is mandatory",

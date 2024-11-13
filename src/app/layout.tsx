@@ -37,15 +37,13 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       <GoogleAnalytics />
-      <GoogleCaptchaWrapper>
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           <Providers>
             <LanguageChanger />
             {children}
           </Providers>
         </body>
-      </GoogleCaptchaWrapper>
-
+      
     </html>
   );
 }
