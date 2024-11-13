@@ -33,7 +33,7 @@
   max-width: 90%;
   margin: 0 auto;
   padding: 1rem;
-  gap: 60px;
+  gap: 40px;
   background-color: #1d1d1b !important;
   background: var(--hex, rgba(225, 229, 255, 0.45));
 }

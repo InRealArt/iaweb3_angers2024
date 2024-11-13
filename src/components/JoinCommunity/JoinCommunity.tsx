@@ -58,10 +58,11 @@ const JoinCommunity = () => {
           />
         </div>
 
-        <h2 className={styles.title}>
+        
+        <div className={styles.titleContainer}>
           {parse(i18n[language].community.title1)}
           <span className={styles.highlight}> {parse(i18n[language].community.title2)}</span>
-        </h2>
+        </div>
 
         <p className={styles.description}>
           {parse(i18n[language].community.description)}
