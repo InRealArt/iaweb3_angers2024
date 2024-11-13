@@ -1,6 +1,6 @@
 import styles from '@/app/page.module.css';
 
-import ImageHeader from '@/components/HeroSection/HeroSection';
+import HeroSection from '@/components/HeroSection/HeroSection';
 import EventInfo from '@/components/EventInfo/EventInfo';
 import ArtistProfile from '@/components/ArtistProfile/ArtistProfile';
 
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Logo />
-      <ImageHeader />
+      <HeroSection />
       <EventInfo />
       <ArtistProfile />
       <WhyChooseUs/>
