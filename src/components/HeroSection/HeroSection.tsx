@@ -8,7 +8,7 @@ import { I18nContext } from '@/i18n-context';
 import Link from "next/link";
 
 const  HeroSection = () => {
-  const { language, i18n } = useContext(I18nContext);
+  const { language, i18n } = useContext(I18nContext)
 
   return (
     <div className={styles.heroContainer}>
