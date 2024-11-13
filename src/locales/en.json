@@ -96,7 +96,12 @@
       "description": "To offer you a unique experience, InRealArt has created a marketplace connected to the real world through its partner galleries. It's easy to find the works that inspire you, whether you're a professional or an individual. Join us now on IRA!"
     },
     "community": {
-      "description": "There are so many rare moments at InRealArt that we warmly invite you that we warmly invite you to join our Discord and enjoy all the web3 and phygital experience we have to offer. Sharpen your artistic sense by winning exclusive airdrops! Win invitations to take part in sumptuous vernissages with our artists... InReal Art is the &quot;Golden Key&quot; of the art world. <br /> We'll open every door for you, so keep an eye out and be curious!"
+      "title1": "Join our",
+      "title2": "Community & Airdrop",
+      "description": "There are so many rare moments at InRealArt that we warmly invite you that we warmly invite you to join our Discord and enjoy all the web3 and phygital experience we have to offer. Sharpen your artistic sense by winning exclusive airdrops! Win invitations to take part in sumptuous vernissages with our artists... InReal Art is the &quot;Golden Key&quot; of the art world. <br /> We'll open every door for you, so keep an eye out and be curious!",
+      "buttonDiscord": "Launch Discord"
+
+
     },
     "toast": {
       "errorEmail": "E-mail is not in the correct format",

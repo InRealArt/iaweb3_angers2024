@@ -84,6 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .leftSection, .rightSection {
@@ -91,10 +92,26 @@
 }
 
 .artCard {
-  background: rgba(255, 255, 255, 0.1);
+  background: #1d1d1b;
   border-radius: 20px;
   padding: 1rem;
   width: 400px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: -1;
+  }
 
   .artworkImage {
     width: 100%;

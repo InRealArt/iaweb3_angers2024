@@ -95,7 +95,11 @@
       "description": "Pour vous offrir une expérience unique, InRealArt a créé une marketplace connectée au monde réel grâce à ses galeries partenaires. Trouvez facilement les œuvres qui vous inspirent, que vous soyez professionnel ou particulier. Rejoignez-nous dès maintenant sur IRA !"
     },
     "community": {
-      "description": "Il y a tellement de moments rares chez InRealArt que nous vous invitons chaudement à rejoindre notre Discord pour profitez de toute l&#039;expérience web3 et phygitale que l&#039;on a vous offrir. Affûtez votre sens artistique en remportant des exclusivités lors de nos airdrops ! Gagnez des invitations pour participer à des vernissages somptueux avec nos artistes... InReal Art est la &quot;Clé d&#039;Or&quot; du monde Artistique. <br /> Nous vous ouvrons toutes les portes, soyez attentifs et soyez curieux !"
+      "title1": "Rejoins notre",
+      "title2": "Communauté & Airdrop",
+      "description": "Il y a tellement de moments rares chez InRealArt que nous vous invitons chaudement à rejoindre notre Discord pour profitez de toute l&#039;expérience web3 et phygitale que l&#039;on a vous offrir. Affûtez votre sens artistique en remportant des exclusivités lors de nos airdrops ! Gagnez des invitations pour participer à des vernissages somptueux avec nos artistes... InReal Art est la &quot;Clé d&#039;Or&quot; du monde Artistique. <br /> Nous vous ouvrons toutes les portes, soyez attentifs et soyez curieux !",
+      "buttonDiscord": "Rejoins Discord"
+
     },
     "toast": {
       "errorEmail": "Le format de l'e-mail est incorrect",

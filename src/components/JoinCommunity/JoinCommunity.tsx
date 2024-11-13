@@ -5,9 +5,10 @@ import styles from './JoinCommunity.module.scss';
 import { I18nContext } from '@/i18n-context';
 import { useContext } from 'react';
 import parse from 'html-react-parser';
+import Link from "next/link";
 
 const JoinCommunity = () => {
-  const { language, i18n } = useContext(I18nContext);
+  const { language, i18n } = useContext(I18nContext)
 
   return (
     <div className={styles.container} id="discord">
@@ -58,24 +59,21 @@ const JoinCommunity = () => {
         </div>
 
         <h2 className={styles.title}>
-          Join our
-          <span className={styles.highlight}> Community & air drop</span>
+          {parse(i18n[language].community.title1)}
+          <span className={styles.highlight}> {parse(i18n[language].community.title2)}</span>
         </h2>
 
         <p className={styles.description}>
           {parse(i18n[language].community.description)}
         </p>
 
-        <button className={styles.discordButton}>
-          <Image 
-            src="/img/icons/discord.png " 
-            alt="Discord" 
-            width={24} 
-            height={24}
-          />&nbsp;
-          Launch Discord
-        </button>
+        <a href="https://discord.gg/WbDuyzzk" target="_blank" rel="noopener noreferrer" className={styles.discordButton}>
+          <Image src="/img/icons/discord.png"  alt="Discord" width={24} height={24}/>
+          {parse(i18n[language].community.buttonDiscord)}
+        </a>
+
       </div>
+      
     </div>
   );
 };
