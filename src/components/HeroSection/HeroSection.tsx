@@ -37,7 +37,7 @@ const  HeroSection = () => {
 
         <button className={styles.discoverButton}>
           <Link className={styles.menuLinkElement} href={`#discord`}>
-          Discover Our universe →
+          {parse(i18n[language].hero.link)} →
           </Link>
         </button>
       </div>
