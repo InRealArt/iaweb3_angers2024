@@ -12,14 +12,14 @@ import Testimonials from '@/components/Testimonials/Testimonials';
 import TrustedPartners from '@/components/TrustedPartners/TrustedPartners';
 import CatalogueRequest from '@/components/JoinCommunity/JoinCommunity';
 import Footer from '@/components/Footer/Footer';
+import PlaceForYou from '@/components/PlaceForYou/PlaceForYou';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Logo />
       <HeroSection />
-      <EventInfo />
-      <ArtistProfile />
+      <PlaceForYou />
       <WhyChooseUs/>
       <CatalogueStats/>
       <Testimonials/>

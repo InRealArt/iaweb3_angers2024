@@ -2,21 +2,27 @@
 
 import Image from 'next/image';
 import styles from './HeroSection.module.scss';
+import { useContext } from 'react';
+import parse from 'html-react-parser';
+import { I18nContext } from '@/i18n-context';
 
-export default function HeroSection() {
+
+const  HeroSection = () => {
+  const { language, i18n } = useContext(I18nContext);
+
   return (
     <div className={styles.heroContainer}>
       <div className={styles.leftSection}>
         <h1 className={styles.title}>
-          Discover our<br />
-          Collection<br />
-          of<br />
-          Physical &<br />
-          Digital Art
+        {parse(i18n[language].hero.title1)}
+        <br />
+        <span className={styles.title2}>
+          {parse(i18n[language].hero.title2)}
+        </span>
+        
         </h1>
         <p className={styles.subtitle}>
-          Ecosystem and marketplace for very<br />
-          rare real world assets
+          {parse(i18n[language].hero.description)}
         </p>
         
         <div className={styles.artistsSection}>
@@ -54,3 +60,5 @@ export default function HeroSection() {
     </div>
   );
 }
+
+export default HeroSection

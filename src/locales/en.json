@@ -1,6 +1,9 @@
 {
     "hero": {
-      "title": "Discover Catherine Sénéchal's latest artistic creations with InReal Art"
+      "title1": "Discover our",
+      "title2": "Collection <br /> of<br /> Physical &amp; <br />Digital Art",
+      "description": "Ecosystem and marketplace for very <br />rare real world assets"
+
     },
     "eventInfo": {
       "title": "InRealArt 2024 & Sénéchal Catalog",
@@ -88,6 +91,9 @@
       "formItem2": "Email",
       "formItem3": "Phone",
       "button": "Get the catalog"
+    },
+    "placeForYou": {
+      "description": "To offer you a unique experience, InRealArt has created a marketplace connected to the real world through its partner galleries. It's easy to find the works that inspire you, whether you're a professional or an individual. Join us now on IRA!"
     },
     "community": {
       "description": "There are so many rare moments at InRealArt that we warmly invite you that we warmly invite you to join our Discord and enjoy all the web3 and phygital experience we have to offer. Sharpen your artistic sense by winning exclusive airdrops! Win invitations to take part in sumptuous vernissages with our artists... InReal Art is the &quot;Golden Key&quot; of the art world. <br /> We'll open every door for you, so keep an eye out and be curious!"
