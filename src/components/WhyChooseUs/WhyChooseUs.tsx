@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <Gem size={20} color="black" />
+            <Gem size={20} color="white" />
           </div>
 
           <div className={styles.cardTitle}>{parse(i18n[language].whyChooseUS.cardTitle1)}</div>
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <ThumbsUp size={20} color="black" />
+            <ThumbsUp size={20} color="white" />
           </div>
           <div className={styles.cardTitle}>{parse(i18n[language].whyChooseUS.cardTitle2)}</div>
 
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <CircleDollarSign size={20} color="black" />
+            <CircleDollarSign size={20} color="" />
           </div>
           <div className={styles.cardTitle}>{parse(i18n[language].whyChooseUS.cardTitle3)}</div>
           <div className={styles.cardText}>

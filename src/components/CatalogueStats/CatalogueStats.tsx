@@ -26,7 +26,7 @@ const CatalogueStats = () => {
           </div>
         </div>
         <div className={styles.statItem}>
-          <div className={styles.statNumber}>1000  +</div>
+          <div className={styles.statNumber}>500  +</div>
           <div className={styles.statDescription}>
             <span className={styles.normalText}>{parse(i18n[language].stats.stat31)}</span>
             <br></br><br></br>

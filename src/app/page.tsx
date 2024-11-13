@@ -21,7 +21,6 @@ export default function Home() {
       <EventInfo />
       <ArtistProfile />
       <WhyChooseUs/>
-      <Expertise/>
       <CatalogueStats/>
       <Testimonials/>
       <TrustedPartners/>
