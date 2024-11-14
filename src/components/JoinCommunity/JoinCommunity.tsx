@@ -68,7 +68,7 @@ const JoinCommunity = () => {
           {parse(i18n[language].community.description)}
         </p>
 
-        <a href="https://discord.gg/WbDuyzzk" target="_blank" rel="noopener noreferrer" className={styles.discordButton}>
+        <a href="https://discord.gg/Au4bPCjY" target="_blank" rel="noopener noreferrer" className={styles.discordButton}>
           <Image src="/img/icons/discord.png"  alt="Discord" width={24} height={24}/>
           {parse(i18n[language].community.buttonDiscord)}
         </a>
