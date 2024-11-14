@@ -131,12 +131,12 @@
 
   &:nth-child(2) { // Top Right
     top: 20%;
-    right: 0;
+    right: -5%;
   }
 
   &:nth-child(3) { // Bottom Right
     bottom: 20%;
-    right: 0;
+    right: -5%;
   }
 
   &:nth-child(4) { // Bottom
@@ -147,12 +147,12 @@
 
   &:nth-child(5) { // Bottom Left
     bottom: 20%;
-    left: 0;
+    left: -5%;
   }
 
   &:nth-child(6) { // Top Left
     top: 20%;
-    left: 0;
+    left: -5%;
   }
 
   &:hover {

@@ -43,21 +43,29 @@ const  HeroSection = () => {
       </div>
 
       <div className={styles.rightSection}>
-        <div className={styles.artCard}>
-          <Image 
-            src="/img/heroSection/lelocoin.png" 
-            alt="Lelocoin by Leloluce" 
-            width={400} 
-            height={500} 
-            className={styles.artworkImage}
-          />
-          <div className={styles.artworkInfo}>
-            <h3>Lelocoin</h3>
-            <p>Leloluce</p>
-            <p>60 × 80cm</p>
-            <span className={styles.artType}>Pop-Art</span>
+        <div className={styles.cardWrapper}>
+          <div className={styles.backgroundCard}></div>
+          <div className={styles.artCard}>
+            <Image 
+              src="/img/heroSection/lelocoin.png" 
+              alt="Lelocoin by Leloluce" 
+              width={400} 
+              height={500} 
+              className={styles.artworkImage}
+            />
+            
+            <div className={styles.artworkInfo}>
+              <div className={styles.leftInfo}>
+                <h3>Lelocoin</h3>
+                <p>Leloluce</p>
+              </div>
+              <div className={styles.rightInfo}>
+                <p>60 × 80cm</p>
+                <span className={styles.artType}>Pop-Art</span>
+              </div>
+            </div>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
   );
