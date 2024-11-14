@@ -48,10 +48,12 @@ const  HeroSection = () => {
           <div className={styles.artCard}>
             <Image 
               src="/img/heroSection/lelocoin.png" 
-              alt="Lelocoin by Leloluce" 
+              alt="Lelocoin by Leloluce - Œuvre NFT exclusive" 
               width={400} 
               height={500} 
               className={styles.artworkImage}
+              loading='eager'
+              priority={true}
             />
             
             <div className={styles.artworkInfo}>
