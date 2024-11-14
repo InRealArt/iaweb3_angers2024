@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <CircleDollarSign size={20} color="" />
+            <CircleDollarSign size={20} color="white" />
           </div>
           <div className={styles.cardTitle}>{parse(i18n[language].whyChooseUS.cardTitle3)}</div>
           <div className={styles.cardText}>
