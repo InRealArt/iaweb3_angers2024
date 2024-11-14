@@ -36,11 +36,23 @@
   flex-direction: column;
   gap: 0.5rem; // Espace entre statNumber et statDescription
   align-items: center;
+  text-align: center;
   justify-content: center;
   flex-shrink: 0;
   width: 100%; // Permet une meilleure réactivité
   max-width: 18.5625rem; // Limite la largeur maximale
   position: relative;
+
+  @media (max-width: 1024px) {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
+  @media (max-width: 768px) {
+    flex: 0 1 100%;
+    max-width: 300px;
+    width: 100%;
+  }
 }
 
 .statNumber {
@@ -85,11 +97,17 @@
   font-weight: var(--heading-text-paragraphe-font-weight, 400);
   position: relative;
   line-height: 1.4; // Améliore la lisibilité
+
+  .normalText {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 1200px) {
   .statsContainer {
-    justify-content: space-between; // Répartit l'espace entre les éléments
+    justify-content: center; // Répartit l'espace entre les éléments
   }
 
   .statItem {
