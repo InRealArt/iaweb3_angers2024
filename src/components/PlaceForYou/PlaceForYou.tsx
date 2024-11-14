@@ -10,7 +10,7 @@ export default function PlaceForYou() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Un endroit qui vous rassemble</h1>
+      <h1 className={styles.title}>{parse(i18n[language].placeForYou.title)}</h1>
       
       <p className={styles.description}>
         {parse(i18n[language].placeForYou.description)}
