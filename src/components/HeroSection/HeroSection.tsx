@@ -28,9 +28,9 @@ const  HeroSection = () => {
         <div className={styles.artistsSection}>
           <div className={styles.artistAvatars}>
             {/* Vous devrez ajouter les vraies images des artistes ici */}
-            <Image src="/img/heroSection/senechal.png" alt="Catherine Sénéchal" width={60} height={60} className={styles.avatar} />
-            <Image src="/img/heroSection/marcpfelzer.png" alt="Artist 2" width={60} height={60} className={styles.avatar} />
-            <Image src="/img/heroSection/nadineleprince.png" alt="Artist 3" width={60} height={60} className={styles.avatar} />
+            <Image src="/img/heroSection/senechal.png" alt="Catherine Sénéchal" width={70} height={70} className={styles.avatar} />
+            <Image src="/img/heroSection/marcpfelzer.png" alt="Artist 2" width={70} height={70} className={styles.avatar} />
+            <Image src="/img/heroSection/nadineleprince.png" alt="Artist 3" width={70} height={70} className={styles.avatar} />
           </div>
           <span className={styles.artistCount}>15+ Top Artists</span>
         </div>

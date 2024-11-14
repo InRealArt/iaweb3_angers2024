@@ -1,11 +1,12 @@
 .heroContainer {
   display: flex;
   justify-content: center;
-  padding: 4rem 6rem;
   background-color: #1d1d1b;
   color: white;
   min-height: 80vh;
-  gap: 0.5rem;
+  padding: 2rem;
+  gap: 2rem;
+  
 }
 
 .leftSection {
@@ -13,22 +14,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 600px;
 }
 
 .title {
   font-size: 4rem;
   font-weight: bold;
   line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .title2 {
   font-family: "Unbounded", sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: #a0a0a0;
   margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .artistsSection {
@@ -36,13 +41,14 @@
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .artistAvatars {
   display: flex;
   .avatar {
-    width: 60px;
-    height: 60px;
+    width: clamp(40px, 6vw, 70px);
+    height: clamp(40px, 6vw, 70px);
     border-radius: 50%;
     border: 2px solid white;
     margin-left: -15px;
@@ -54,13 +60,14 @@
 
 .artistCount {
   color: #a0a0a0;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
 .discoverButton {
   color: #ffffff;
   text-align: left;
   font-family: "Unbounded-Bold", sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 148.99%;
   font-weight: 700;
   position: relative;
@@ -92,13 +99,15 @@
 }
 
 .artCard {
-  background: #1d1d1b;
+  background:  rgba(0, 0, 0, 1);
   border-radius: 20px;
   padding: 1rem;
   width: 400px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255);
   position: relative;
   z-index: 2;
+  width: 100%;
+  max-width: 400px;
 
   &::before {
     content: '';
@@ -109,8 +118,8 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    z-index: -1;
+    border: 2px solid rgba(255, 255, 255, 1);
+    z-index: -10;
   }
 
   .artworkImage {
@@ -124,11 +133,12 @@
     padding: 1rem;
     
     h3 {
-      font-size: 1.5rem;
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
       margin-bottom: 0.5rem;
     }
 
     p {
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
       color: #a0a0a0;
       margin: 0.2rem 0;
     }
@@ -139,6 +149,7 @@
       padding: 0.3rem 1rem;
       border-radius: 20px;
       margin-top: 0.5rem;
+      font-size: clamp(0.8rem, 1.2vw, 0.9rem);
     }
   }
 }
@@ -146,7 +157,8 @@
 @media (max-width: 1024px) {
   .heroContainer {
     flex-direction: column;
-    padding: 2rem;
+    align-items: center;
+    padding: 1.5rem;
     gap: 3rem;
   }
 
@@ -154,6 +166,14 @@
     font-size: 3rem;
   }
 
+  .leftSection {
+    text-align: center;
+    align-items: center;
+  }
+
+  .artistsSection {
+    justify-content: center;
+  }
   .rightSection {
     width: 100%;
   }
@@ -161,5 +181,15 @@
   .artCard {
     width: 100%;
     max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    padding: 1rem;
+  }
+
+  .artistAvatars .avatar {
+    margin-left: -10px;
   }
 }
