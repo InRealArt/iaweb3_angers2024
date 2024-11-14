@@ -60,7 +60,7 @@ const  HeroSection = () => {
                 <p>Leloluce</p>
               </div>
               <div className={styles.rightInfo}>
-                <p>60 × 80cm</p>
+                <span className={styles.artworkSize}>60 × 80cm</span>
                 <span className={styles.artType}>Pop-Art</span>
               </div>
             </div>
